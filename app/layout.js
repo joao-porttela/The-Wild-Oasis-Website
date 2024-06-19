@@ -1,3 +1,5 @@
+import {SpeedInsights} from "@vercel/speed-insights/next";
+
 import Logo from "./_components/Logo";
 import Navigation from "./_components/Navigation";
 
@@ -36,6 +38,8 @@ export default function RootLayout({children}) {
             <ReservationProvider>{children}</ReservationProvider>
           </main>
         </div>
+
+        <SpeedInsights />
       </body>
     </html>
   );
